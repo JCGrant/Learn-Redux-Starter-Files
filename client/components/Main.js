@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, cloneElement } from 'react';
 import { Link } from 'react-router';
 
 export default class Main extends Component {
@@ -8,6 +8,7 @@ export default class Main extends Component {
         <h1>
           <Link to="/">Reduxstagram</Link>
         </h1>
+        {cloneElement(this.props.children, this.props)}
       </div>
     );
   }
