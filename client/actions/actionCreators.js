@@ -3,7 +3,7 @@ export const increment = (index) => ({
   index
 });
 
-export const addCommement = (postId, author, comment) => ({
+export const addComment = (postId, author, comment) => ({
   type: 'ADD_COMMENT',
   postId,
   author,
