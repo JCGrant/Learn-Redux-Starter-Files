@@ -26,7 +26,8 @@ export default class Photo extends Component {
         <figcaption>
           <p>{post.caption}</p>
           <div className="control-buttons">
-            <button className="likes">&hearts; {post.likes}</button>
+            <button onClick={this.props.increment.bind(null, i)}
+              className="likes">&hearts; {post.likes}</button>
             <Link to={`/view/${post.code}`}
               className="button">
               <span className="comment-count">
