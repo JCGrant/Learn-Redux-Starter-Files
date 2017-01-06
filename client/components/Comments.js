@@ -8,7 +8,8 @@ export default class Comments extends Component {
         <p>
           <strong>{comment.user}</strong>
           {comment.text}
-          <button className="remove-comment">&times;</button>
+          <button onClick={this.props.removeComment.bind(null, this.props.params.postId, i)}
+            className="remove-comment">&times;</button>
         </p>
       </div>
     );
