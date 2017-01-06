@@ -15,7 +15,7 @@ import store, { history } from './store';
 const router = (
   <Provider store={store}>
     <Router history={history}>
-      <Route path="/" component={App}>
+      <Route path="/learning-redux" component={App}>
         <IndexRoute component={PhotoGrid}></IndexRoute>
         <Route path="/view/:postId" component={Single}></Route>
       </Route>
